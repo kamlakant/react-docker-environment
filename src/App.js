@@ -1,11 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  const apiURL = `https://myapi-${process.env.REACT_APP_ENV}.mydomain.com`;
   return (
     <div className="App">
       <header className="App-header">
+        <h1>React Enviornment Variables</h1>
+        <p>
+          API URL: <code>{apiURL}</code>
+        </p>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
